@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<head>
+		<title>La serpiente</title>
+		<link rel="stylesheet" href="index.css">
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=YlP_oqrbISye8fAGWHsJdjyBrnlBmNGmvoOEfvz23IRXb7JBkdUo-RQyu8lOCvE57Fr9Ew0blR8XpNeAjP_Yw0-abelBdYABnAo8OgKSxHcaO-_nXXXoCxvR_c5SH4ZQpi2PDmmtJTOLqo8DV-7QkX-qtYR1qnKXQE44GxQLPfG0G9Zh-3gjJp7SA3ESsdtcBElbp__r2RjQjWmCUEKyDToiATipHKjsTh6aQlff-3daUs1Nv5fzEc4M8lSzqnCHVXWzusw0sH-XEpvsGoF70auGia6opJg59fT2GHeweYGifGUbet5fN4Oet0K1lc5pW0Zn2vwGSFIkAHCFguASwjRDGvux9_aMBDlgpJogAavQgWRblBPHACisyCMxuUSGmtruu0odrlonNZU4Kf2f34DnfR3vMGSUYJgYAH-DO8jU1NHwoRpwFHopsi7yp5TEXS7N8hwN_dfSyGH2zIzf0npb4h9zZP4yln1Z-43eANTCC4KxpKWN-00DB1-gsNXNacQFDNTVHUcH4JlbiVEUYzm1dvJ_c81ALrIvWhTgxOQRAUR32LYVWjMDnz_ev2M7Da2PIx7eTq7wJsBJQmy8IvctFHS2dL2D58h1vWfZTQyxaguTsyBQxVFAvg0ys1DnHf8lat-Hr63iCbKwvbooxicjitk-NKSxdHRV1GePtAUoQQ8TwhyecE67Z9I4ZmJtlHHYfUVDmE2jt8bY4yTG791EXcm8hDBZgPybV_BqajrhEtKtAUt3H7hPWINaFuL8kny3pYnPBBLCd0Et6F1qAk0fcbgqqRs3ViptBxpFlNmsWDOyW1vYivOIjSvjOyftnaCeYu-4AtflGXslOXckukKAe7Ggi5XLbMznN7zcDtD9anIdwelfkJkvYDbdcl-Sf6oM641pZsujBw1Gvtezqc_hysjnsKAOoAf97YkzeJP2-5PK_wy3AufjQa-hXU263SpGX0unAX_1TTinFbpLUmNHygRZAUSpEdlOwvv-zyvsx3MpWVQ5lfOp4HF_fbFl4o-kszNWC5h3lRTMC7HIIq55M4_ZDSg5nX2WGinTHg9GLCHBN2CSIULpIeTzGwPdD_8V-2s61fYw5O2Kj3ICemGwXy4tC0vAaFFRFo6jeBPV5I69XVDrZK41eFQXxxp6a8VGrO8n3xS3EloVJ5I_VgU-33R4NIf3DIjG3SxQ2YNryO_ERlJr24NwHs0Z6Ohjhgwjpu19Ycq0enIYmubVn08oFE3qBmCAsa6Lkuv46U2s2Kvj8lrZsvbGaQwIkOspwFuylQ3rPoQHpWku2diyKeBESy_qzpUa4dcNJnyO8Xo" charset="UTF-8"></script></head>
+	<body>	
+		<h2>Snake</h2>
+		<div id="cuadtam">
+			<p>Tamaño de la cuadricula</p>
+			<input type="range" min="1" max="16" value="8" id="tamrango"/>
+			<p id="tamtexto"></p>
+		</div>
+
+		<div id="cuadvel">
+			<p>Velocidad / s</p>
+			<input type="range" min="0.5" max="6.0" value="1.0" step="0.25" id="velrango"/>
+			<p id="veltexto"></p>
+		</div>
+
+		<p id="puntaje">Puntaje: 0</p>
+
+		<div id="canvas">
+		</div>
+		<button id="boton" type="button">Empezar</button>
+		<p id="coordenadas"></p>
+
+		<div id="perderpopup">
+			<h3 class="popuptitle">Has perdido</h3>
+			<p class="punt">Tu puntuacion fue:</p>
+			<button class="reiniciarbtn">Reiniciar</button>
+		</div>
+
+		<div id="ganarpopup">
+			<h3 class="popuptitle">Has ganado!!!</h3>
+			<p class="punt">Tu puntuacion fue:</p>
+			<button class="reiniciarbtn">Reiniciar</button>
+		</div>
+
+	</body>
+	<script src="Cuadricula.js"></script>
+	<script src="motor.js"></script>
+</html>

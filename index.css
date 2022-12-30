@@ -1,0 +1,176 @@
+*{	
+	margin: 0;
+	padding: 0;
+	font-family:Arial
+}
+
+body{
+	background-color: #000;
+	color: #fff;
+}
+
+h2{
+	margin: 0.25rem auto;
+	text-align: center;
+}
+/*Atributos de la cuadricula*/
+#cuadtam{
+	margin: 0 auto;
+	width:fit-content;
+}
+
+#cuadtam p{
+	margin: 0 0.5rem;
+	color: #fff;
+	width: 8rem;
+	text-align: center;
+	display: inline-block;
+}
+
+#cuadtam input{
+	margin: 0 0.5rem;
+	display: inline-block;
+}
+
+#cuadvel{
+	margin: 0 auto;
+	width:fit-content;
+}
+
+#cuadvel p{
+	margin: 0 0.5rem;
+	width: 8rem;
+	text-align: center;
+	display: inline-block;
+}
+
+#cuadvel input{
+	margin: 0 0.5rem;
+	display: inline-block;
+}
+
+/*Cuadricula*/
+
+#coordenadas{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	background-color: #fff;
+	color: #000;
+	overflow-y: scroll;
+	width: 75%;
+	height:5rem;
+}
+
+#canvas{
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+	height: fit-content;
+}
+
+.fila{
+	display: block;
+	width: 100%;
+	height: 2.5rem;
+}
+
+.cell{
+	display: inline-block;
+	border-radius: 0.75rem;
+	background-color: #ffffff;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.frutilla{
+	display: inline-block;
+	border-radius: 0.75rem;
+	background-color: #ff0000;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.snakehead{
+	display: inline-block;
+	border-radius: 0.75rem;
+	background-color: #2ed3a1;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.snake{
+	display: inline-block;
+	border-radius: 0.75rem;
+	background-color: #008000;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+#boton{
+	display: block;
+	margin: 2rem auto;
+	cursor: pointer;
+}
+
+#puntaje{
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*perderpopup*/
+
+#bckhalf{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.25)
+}
+
+#perderpopup{
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+	display: none;
+	margin: 10rem auto;
+	width: 25rem;
+	height: 15rem;
+	overflow: hidden;
+}
+
+#ganarpopup{
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+	display: none;
+	margin: 10rem auto;
+	width: 25rem;
+	height: 15rem;
+	overflow: hidden;
+}
+
+.popuptitle{
+	color: #ff0000;
+	display: block;
+	font-size: 2rem;
+	margin: 1.5rem auto;
+}
+
+#ganarpopup h3{
+	color: #48c500;
+}
+
+.punt{
+	display: block;
+	margin: 2rem auto;
+}
+
+.reiniciarbtn{
+	cursor: pointer;
+	padding: 0.5rem;
+	display: block;
+	margin: 4rem auto;
+}
